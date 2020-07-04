@@ -9,10 +9,16 @@ export default class CalendarPicker extends React.Component {
     }
   }
 
-
+  updateDateField = (value) => {
+    const dateField = document.getElementById("date-input");
+    if(dateField && value.isValid()){
+      dateField.value = value.format("DD/MM/YYYY");
+    }
+  }
   
   onChange = (value) => {
     this.setState({ value });
+    this.updateDateField(value);
   }
 
   render () {
