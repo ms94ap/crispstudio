@@ -1,8 +1,10 @@
 div
+  = react_component('CalendarPicker')
   ul
     - @tasks.each do |task|
       li 
         | #{task.title}
+          #{task.date}
         span = link_to "Edit",  edit_task_path(task)
         span = link_to "Delete",  task, data: { confirm: 'Are you sure'}, method: :delete
 
