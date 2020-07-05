@@ -29,6 +29,7 @@ export default class CalendarPicker extends React.Component {
         <Calendar
           onChange={this.onChange}
           value={value}
+          showToday={ false }
         />
       </React.Fragment>
     );
