@@ -25,7 +25,7 @@ class TasksController < ApplicationController
     else
       respond_to do |format|
         format.html { redirect_to tasks_path }
-        format.json { render json: @tasks }
+        format.json { }
       end
     end
   end
@@ -42,7 +42,7 @@ class TasksController < ApplicationController
   def destroy
     @task.destroy
     respond_to do |format|
-      format.html { redirect_to tasks_url }
+      format.html { redirect_to tasks_path }
       format.json { }
     end
   end

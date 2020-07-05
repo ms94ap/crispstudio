@@ -5,7 +5,7 @@ div
       li 
         | #{task.title}
           #{task.date}
-        span = link_to "Edit",  edit_task_path(task)
-        span = link_to "Delete",  task, data: { confirm: 'Are you sure'}, method: :delete
+        span> = link_to "Edit",  edit_task_path(task)
+        span> = link_to "Delete",  task, data: { confirm: 'Are you sure'}, method: :delete
 
   div = link_to "New Task",  new_task_path
