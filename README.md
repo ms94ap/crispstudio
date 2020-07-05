@@ -15,3 +15,15 @@
  ```
  $ rails s
  ```
+
+ ### For Development
+
+ Material UI is pre installed and to implement import in a React Component as such :
+
+ ```
+ import { Button } from '@material-ui/core';
+
+ ```
+
+ For more details visit [Material UI](https://material-ui.com/)
+
